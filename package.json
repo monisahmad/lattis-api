@@ -1,0 +1,54 @@
+{
+  "name": "lattis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "start:babel": "babel-node -- index.js",
+    "build": "rm -rf build && babel src -d build",
+    "start:babel-dev": "nodemon --exec babel-node -- ./src/index.js",
+    "start:dev": "nodemon index.js",
+    "precommit": "lint-staged && yarn test",
+    "test": "yarn lint && jest --forceExit",
+    "lint": "eslint src/** __tests__/**",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^0.14.3",
+    "jest": "^23.3.0",
+    "lint-staged": "^7.2.0",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.23.0",
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.6.1",
+    "remove": "^0.1.5",
+    "uuid": "^3.3.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "engines": {
+    "node": ">=9.11"
+  }
+}

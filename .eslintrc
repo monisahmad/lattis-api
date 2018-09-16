@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "arrow-body-style": 0,
+    "no-unused-vars":"warn"
+  },
+  "env": {
+      "jest": true
+    }
+}
