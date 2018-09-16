@@ -27,7 +27,7 @@ describe('Testing Signup', () => {
     const response = await request(app).post('/signup').send(dummyUser).set('Content-Type', 'application/x-www-form-urlencoded');
     expect(response.body.success).toBe(true);
     expect(response.statusCode).toBe(200);
-  }, 10000);
+  }, 20000);
 
   test('Testing Login', async () => {
     const loginUser = {
@@ -37,5 +37,5 @@ describe('Testing Signup', () => {
     const response = await request(app).post('/login').send(loginUser).set('Content-Type', 'application/x-www-form-urlencoded');
     expect(response.body.success).toBe(true);
     expect(response.statusCode).toBe(200);
-  }, 10000);
+  }, 20000);
 });
