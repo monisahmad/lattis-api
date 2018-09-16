@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _v = require('uuid/v1');
+var _v = require('uuid/v4');
 
 var _v2 = _interopRequireDefault(_v);
 

@@ -14,5 +14,5 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const port = _constants2.default.PORT;
 _server2.default.listen(port, () => {
-  console.log(`server started on port 3000 ${port}`);
+  console.log(`server started on port ${port}`);
 });

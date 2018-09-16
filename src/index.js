@@ -5,5 +5,5 @@ import app from './server';
 
 const port = constants.PORT;
 app.listen(port, () => {
-  console.log(`server started on port 3000 ${port}`);
+  console.log(`server started on port ${port}`);
 });
