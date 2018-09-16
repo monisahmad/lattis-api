@@ -76,6 +76,8 @@ app.use((0, _helmet2.default)());
 app.use((0, _morgan2.default)('dev'));
 app.use(_bodyParser2.default.urlencoded({ extended: false }));
 
+app.get('/', (req, res) => res.send('Hello, \n This application is sample REST Apis. \n For more Details https://github.com/monisahmad/lattis-api'));
+
 app.get('/status', async (req, res) => {
   res.json({ status: 'Server is Running' });
 });
