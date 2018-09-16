@@ -1,9 +1,9 @@
-import uuidv1 from 'uuid/v1';
+import uuidv4 from 'uuid/v4';
 
 import promisePool from '../database';
 
 const createLock = async (req, res) => {
-  const uuid = uuidv1();
+  const uuid = uuidv4();
   const { userId } = req.decoded.data;
   const { lockName } = req.body;
   const sql = `INSERT INTO locks (macId, lockName, userID) values
