@@ -1,4 +1,4 @@
-#Sample REST APIs for lattis
+#Sample REST APIs
 
 The app is currently host at the following URL:
 https://lattis-api.herokuapp.com
